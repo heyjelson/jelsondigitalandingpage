@@ -10,8 +10,10 @@ window.onload = function() {
                 emailjs.sendForm('contact_service', 'contact_form', this)
                     .then(function() {
                         console.log('SUCCESS!');
+                        alert('message sent Thanks!')
                     }, function(error) {
                         console.log('FAILED...', error);
+                        alert('something wrong.. try later.')
                     });
             });
         }
